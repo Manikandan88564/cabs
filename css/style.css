@@ -1,0 +1,269 @@
+/*-- Body Reset --*/
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0) !important;
+  position: sticky !important;
+  width: 100% !important;
+
+  top: 0 !important;
+  z-index: 10 !important;
+
+}
+
+.navbar-brand img {
+  height: 40px !important;
+
+}
+
+.navbar-nav li {
+  padding: 0 10px !important;
+}
+
+.navbar-nav li a {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.fa-bars {
+  color: #fff !important;
+  font-size: 30px !important;
+}
+
+.nav-pills .nav-link {
+  color: rgb(0 0 0);
+}
+
+.nav-pills {
+  margin-left: 0rem;
+}
+
+.nav-link.activ,
+.nav-link.active,
+.nav-link:hover {
+  background-color: #000000 !important;
+  color: #04bf7b !important;
+}
+
+.carousel-inner {
+  max-height: 650px;
+}
+
+#carousel,
+#navbar {
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+
+.chooseus h1 {
+  text-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.322);
+}
+
+.chooseus h1,
+.chooseus p {
+  color: rgb(0, 0, 0);
+
+}
+
+.bg-contact-header {
+  background-color: #cca700;
+  margin-top: -48px !important;
+}
+
+.custom-pad {
+  padding-left: 20px;
+}
+
+.form-group {
+  color: #000;
+}
+
+.form {
+  padding: 30px !important;
+}
+
+.icon-box {
+
+  background-color: #cca700;
+  box-shadow: 0 3px 25px 0 rgb(255 207 14 / 50%);
+  border-radius: 50%;
+  /* padding: 20px; */
+}
+
+.page-foote {
+  background-color: rgb(48, 44, 44) !important;
+}
+
+.footer-copyright {
+  background-color: #000 !important;
+}
+
+.social-wrapper ul a {
+  display: inline-block;
+  font-size: 40px;
+  padding: 0 18px;
+  text-align: left !important;
+  /* margin: 10px; */
+  /* padding-top: 10px; */
+}
+
+.social-wrapper ul a:hover {
+  background-color: #ffffff49 !important;
+
+  transition: 0.1s;
+}
+
+.social-wrapper p,
+h5 {
+  text-align: left;
+}
+
+.social-wrapper p {
+  color: #fff;
+}
+
+.b-center {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #000000;
+
+}
+
+.btc {
+  color: #ffffff;
+  background-color: #000000;
+  margin: 25px 0;
+  font-weight: 600;
+}
+
+.btc:hover {
+  color: #04bf7b;
+  background-color: #000000;
+  margin: 25px 0;
+}
+
+.animate__animated.animate__slideInRight {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+.tabpanel {
+  display: none;
+}
+
+
+
+
+
+
+/*============= TOP BAR HEADER =============*/
+
+
+
+/*============= NAVIGATION =============*/
+
+
+
+/*============= CAROUSEL =============*/
+
+
+
+/*---Change Carousel Transition Speed --*/
+
+
+/*-- Carousel Content --*/
+
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+
+
+
+/*-- Emoji Navbar --*/
+
+
+
+/*============= FOOTER =============*/
+
+
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {}
+
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Large (lg) devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}

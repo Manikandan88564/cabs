@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML5 Website with Bootstrap | Responsive Website Design</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap 4.5 CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/mdb.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<title>Hello World</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBLXsFnlX84E5YoExJTapigVjlEVcN0amg"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark">
+<div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/demo-logo.jpg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-bars"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link activ" href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+			</div>
+          </nav>
+
+		
+		  <div class="bg-contact-header">
+			<div class="row my-5">
+				<div class="col-md-12 my-4 chooseus">
+				  <h4 class="my-1 text-center" style="font-weight:600; font-family:Noto Serif JP; font-size:28px; color:#000;" >Contact Us</h4>
+				  <h4 class="my-1 text-center pt-3 " style="font-weight:600; font-family:Noto Serif JP; font-size:15px; color:#000;"><a href="index.html">Home</a>->Contact Us</h4>
+				  
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row my-5">
+				
+				<div class="col-md-6 my-4 chooseus" style="border: 1px solid; padding: 30px; box-shadow: 5px 10px #888888;">
+					
+					<ul id="myTab" role="tablist" style="border: solid 1px; margin-bottom:30px;" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center">
+  
+						<li class="nav-item flex-sm-fill " style="margin:0px;">
+   
+						   <a id="home-tab" data-toggle="tab" href="#home" style="margin:0px;" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 rounded-0 text-uppercase font-weight-bold active" style="background-color:#000">One way</a>      
+   
+						</li>
+   
+						<li class="nav-item flex-sm-fill">
+   
+						   <a id="profile-tab" data-toggle="tab" style="margin:0px;" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link rounded-0 border-0 text-uppercase font-weight-bold">Round Trip</a>      
+   
+						</li>
+   
+					 </ul>
+<div id="myTabContent" class="tab-content">
+					<div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade py-4 active show">
+					<form name="contact-form" id="contact-form" action="mail.php" onsubmit="return validate()" method="POST">
+						<div class="form-outline mb-4">
+							<input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Enter name" >
+							<label class="form-label" for="name">Name</label>
+						  </div>
+						
+						<div class="form-outline mb-4">
+
+							<input type="text" class="form-control" id="email" name="email" aria-describedby="email">
+							<label class="form-label" for="email">Email</label>
+							
+						</div>
+						<div class="form-outline mb-4">
+							
+							<input type="text" class="form-control" id="location" name="location" aria-describedby="location" placeholder="Enter pickup location">
+							<label class="form-label" for="location">Location</label>
+						</div>
+						<div class="form-outline mb-4">
+							
+							<input type="text" class="form-control" id="destination" name="destination" aria-describedby="destination">
+							<label class="form-label" for="destination">Destination</label>
+						</div>
+						<div class="form-outline mb-4">
+						<label for="vehicle_type">Vehicle Type</label>
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" id="mini" name="vehicle_type" value="Mini">
+							<label class="form-check-label" for="mini">Mini</label>
+						  </div>
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" id="sedan" name="vehicle_type" value="sedan">
+							<label class="form-check-label" for="sedan">Sedan</label>
+						  </div>
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" id="suv" name="vehicle_type" value="SUV">
+							<label class="form-check-label" for="suv">SUV</label>
+						  </div> 
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" id="tempo-traveller" name="vehicle_type" value="Tempo Traveller">
+							<label class="form-check-label" for="tempo-traveller">Tempo Traveller</label>
+						  </div> 
+						  <div class="form-check">
+							<input class="form-check-input" type="radio" id="bus" name="vehicle_type" value="bus">
+							<label class="form-check-label" for="bus">Bus</label>
+						  </div> 
+						</div>
+						<div class="form-outline mb-4">
+
+						  <input type="text" class="form-control" id="phone" name="phone" >
+						  <label class="form-label" for="phone">Phone</label>
+						</div>
+					
+
+						<button type="submit" class="btn btn-primary">Submit</button>
+					  </form>
+					  </div>
+					  
+
+					  <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade py-4">
+						<form name="contact-form" id="contact-form" action="mail.php" onsubmit="return validate()" method="POST">
+							<div class="form-outline mb-4">
+								<input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Enter name" >
+								<label class="form-label" for="name">Name</label>
+							  </div>
+							
+							<div class="form-outline mb-4">
+	
+								<input type="text" class="form-control" id="email" name="email" aria-describedby="email">
+								<label class="form-label" for="email">Email</label>
+								
+							</div>
+							<div class="form-outline mb-4">
+								
+								<input type="text" class="form-control" id="location" name="location" aria-describedby="location" placeholder="Enter pickup location">
+								<label class="form-label" for="location">Location</label>
+							</div>
+							<div class="form-outline mb-4">
+								
+								<input type="text" class="form-control" id="destination" name="destination" aria-describedby="destination">
+								<label class="form-label" for="destination">Destination</label>
+							</div>
+							<div class="form-outline mb-4">
+							<label for="vehicle_type">Vehicle Type</label>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" id="mini" name="vehicle_type" value="Mini">
+								<label class="form-check-label" for="mini">Mini</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" id="sedan" name="vehicle_type" value="sedan">
+								<label class="form-check-label" for="sedan">Sedan</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" id="suv" name="vehicle_type" value="SUV">
+								<label class="form-check-label" for="suv">SUV</label>
+							  </div> 
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" id="tempo-traveller" name="vehicle_type" value="Tempo Traveller">
+								<label class="form-check-label" for="tempo-traveller">Tempo Traveller</label>
+							  </div> 
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" id="bus" name="vehicle_type" value="bus">
+								<label class="form-check-label" for="bus">Bus</label>
+							  </div> 
+							</div>
+							<div class="form-outline mb-4">
+								<input type="number" class="form-control" id="no-of-days" name="no-of-days" aria-describedby="no-of-days" placeholder="No. of Days" >
+								<label class="form-label" for="no-of-days">No. of Days</label>
+							  </div>
+							<div class="form-outline mb-4">
+	
+							  <input type="text" class="form-control" id="phone" name="phone" >
+							  <label class="form-label" for="phone">Phone</label>
+							</div>
+						
+	
+							<button type="submit" class="btn btn-primary">Submit</button>
+						  </form>
+						  </div>
+				  
+						</div>
+				</div>
+				<div class="col-md-6 my-4">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3915.970941285794!2d76.92178606411849!3d11.04080550727873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d11.042703!2d76.9229754!4m5!1s0x3ba858b6c24ba54d%3A0x84e6712fe7fc5069!2sEdayarpalayam%2C%20Coimbatore%2C%20Tamil%20Nadu!3m2!1d11.0384929!2d76.9240062!5e0!3m2!1sen!2sin!4v1627901696432!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" style="margin: 20px;"></iframe>
+					<h4 class="my-1 text-center" style="padding-top:10px; color:#000;">Need a Ride??</h4>
+					<p class="my-1 text-center" style="padding-bottom:10px;">Enquire Now For the below Details</p>				
+					<table style="color:#000;">
+						<tr>
+						  <td style="width:50%; padding-right:10px;" > <img src="img/phone-call.png" align="right" style="height:50px"> </td>
+						  <td style="width:50%"><p style="margin-bottom:5px !important; font-size:24px; font-weight:600;">Phone:</p>7896541230</td>
+						</tr>
+						<tr>
+							<td style="width:50%;  padding-right:10px; "> <img src="img/mail.png" align="right" style="height:50px"> </td>
+							<td style="width:50%"><p style="margin-bottom:5px !important; font-size:24px; font-weight:600;">Email</p>cabs24/7@gmail.com</td>
+						</tr>
+						<tr>
+							<td style="width:50%;  padding-right:10px;"> <img src="img/location.png" align="right" style="height:50px"> </td>
+							<td style="width:50%"><p style="margin-bottom:5px !important; font-size:24px; font-weight:600;">Address:</p>Tamilnadu, Coimbatore</td>
+						</tr>	
+					</table>
+				</div>	
+		</div>
+	</div>
+
+<!-- Footer -->
+<footer class="page-foote font-small stylish-color-dark pt-4">
+
+	<!-- Footer Links -->
+	<div class="container text-center text-md-left">
+  
+	  <!-- Grid row -->
+	  <div class="row">
+		<div class="col-md-4 mx-auto social-wrapper">
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #04bf7b !important">About Us</h5>
+		  <p>Getting dressed up and traveling with good friends makes for a shared, unforgettable experience.</p>
+		</div>
+
+		<div class="col-md-4 mx-auto social-wrapper">
+  		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #04bf7b !important">Contact Us</h5>
+		  <p style="font-weight:600">Phone</p>
+		  <p>7894563210</p>
+		  <p style="font-weight:600">Address</p>
+		  <p>Saravanampatty, Coimbatore, Tamilnadu</p>
+		  <p style="font-weight:600">Booking Hours</p>
+		  <p>Available 24/7 </p>
+		</div>
+
+		<div class="col-md-4 mx-auto social-wrapper">
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #04bf7b !important">Our Limitation</h5>
+		  <p>Allover in Tamilnadu</p>
+		  <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #04bf7b !important">Social Links</h5>
+		  <ul align="left" style="padding-left:0px">  
+			  <a href="https://www.facebook.com "><i class="fab fa-facebook-f"  style="color:#3b5998"></i></a>
+			  <a style="padding: 0 10px;"><i class="fab fa-twitter" style="color:#1DA1F2"></i></a>
+			  <a style="padding: 0 11px;"><i class="fab fa-instagram" style="color:  #833AB4"></i></a> 
+		  </ul>
+		</div>
+	  </div>
+	</div>
+
+	<!-- <div class="footer-copyright text-center py-3">© 2020 by EMSR Travels. All rights reserved.
+	 <p>Developed by</p> <a href="https://eines.in/"> Eines Equipments and Systems</a>
+	</div> -->
+
+	<div class="footer-copyright continer py-3">
+		<div class="row">
+			<div class="col-lg-6 text-left p-3">© 2021 by Demo Cabs. All rights reserved.</div>
+			<div class="col-lg-6 text-right p-3">
+		<p>Developed by <a href="https://eines.in/"> Eines Equipments and Systems</a></p>
+	</div>
+	</div>
+	   </div>
+
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+ <script>
+//	 var location = new google.maps.places.Autocomplete(document.getElementById('location');
+	// google.maps.event.addListener(ac,'place_chnged', function(){
+	//	 var place = location.getPlace();
+	//	 console.log(place.formatted_address);
+	//	 console.log(place_url);
+	// })
+	
+
+
+	function validate(){
+		var vt1 = document.getElementById('mini').checked;
+		var vt2 = document.getElementById('sedan').checked;
+		var vt3 = document.getElementById('suv').checked;
+		var name = $('#name').val().trim();
+		var email = $('#email').val().trim();
+		var location = $('#location').val().trim();
+		var destination = $('#destination').val().trim();
+		var phone = $('#phone').val().trim();
+		var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+		var phoneno = /^\d{10}$/;
+
+		if (name == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+		else if(email == ""){
+			alert("Email must be filled out");
+			return false;
+		}
+		else if(!(email.match(pattern))){
+			alert("Invalid Email address");
+			return false;
+		}
+		else if (location == "") {
+			alert("Enter Location");
+			return false;
+		}
+		else if (destination == "") {
+			alert("Enter Destination");
+			return false;
+		}
+		else if((vt1== "")&&(vt2== "")&&(vt3== "")){
+			alert("Choose vehicle type");
+			return false;
+		}
+		else if (phone == "") {
+			alert("Enter Phone Number");
+			return false;
+		}
+		else if(!(phone.match(phoneno))){
+			alert("Invalid valid phone number");
+			return false;
+		}
+//		<!-- else
+//			{
+//				$.ajax({
+//				url: "mail.php",
+//				method:"post",
+//				data: {name:name },
+//				success: function(response){
+//					console.log(response);
+//				}
+//			});
+//			} 
+
+		return true; 
+	}
+</script>
+	<!-- jQuery -->
+	<script src="js/mdb.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+
+	<!-- End Script Source Files -->
+</body>
+</html>
